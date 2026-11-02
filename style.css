@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.container {
+  width: 598px;
+  height: 390px;
+  background-color: black;
+  padding: 16px;
+}
+.boxes {
+  width: 100%;
+  height: 311px;
+  display: grid;
+  grid-template-areas:
+    "a b c"
+    "d e f";
+  gap: 10px;
+}
+.topbar {
+  width: 550px;
+  display: flex;
+  align-items: start;
+  gap: 6px;
+  margin: 16px;
+}
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+.dot:nth-child(1) {
+  background: #e0675d;
+}
+.dot:nth-child(2) {
+  background: #eaa96d;
+}
+.dot:nth-child(3) {
+  background: #5aa68c;
+}
+.address {
+  width: 515px;
+  height: 11px;
+  background: #fff;
+  border-radius: 3px;
+  margin-left: 6px;
+}
+
+.box1 {
+  grid-area: a;
+  background-color: red;
+}
+.box2 {
+  grid-area: b;
+  background-color: orange;
+}
+.box3 {
+  grid-area: c;
+  background-color: orangered;
+}
+.box4 {
+  grid-area: d;
+  background-color: green;
+}
+.box5 {
+  grid-area: e;
+  background-color: #20dbd8;
+}
+.box6 {
+  grid-area: f;
+  background-color: aqua;
+}
+.container2 {
+  width: 598px;
+  height: 390px;
+  background-color: black;
+  padding: 16px;
+}
+.boxes2 {
+  width: 100%;
+  height: 311px;
+  display: grid;
+  grid-template-areas:
+    "a1 a1 a2"
+    "a3 a4 a2";
+
+  gap: 10px;
+}
+.box7 {
+  grid-area: a1;
+  background-color: red;
+}
+.box8 {
+  grid-area: a2;
+  background-color: orangered;
+}
+.box9 {
+  grid-area: a3;
+  background-color: green;
+}
+.box10 {
+  grid-area: a4;
+  background-color: #20dbd8;
+}
+.container3 {
+  width: 598px;
+  height: 390px;
+  background-color: black;
+  padding: 16px;
+}
+.boxes3 {
+  width: 100%;
+  height: 311px;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas:
+    "a2 a2 a2"
+    "a3 a1 a1"
+    "a4 a4 a4";
+
+  gap: 10px;
+}
+.box11 {
+  grid-area: a1;
+  background-color: red;
+}
+.box12 {
+  grid-area: a2;
+  background-color: orangered;
+}
+.box13 {
+  grid-area: a3;
+  background-color: green;
+}
+.box14 {
+  grid-area: a4;
+  background-color: #20dbd8;
+}
+.container4 {
+  width: 598px;
+  height: 390px;
+  background-color: black;
+  padding: 16px;
+}
+.boxes4 {
+  width: 100%;
+  height: 311px;
+  display: grid;
+  grid-template-rows: 1fr 2fr 0.5fr;
+  grid-template-areas:
+    "a5 a5 a6 a6"
+    "a7 a8 a8 a8"
+    "a9 a9 a9 a9";
+
+  gap: 10px;
+}
+.box15 {
+  grid-area: a5;
+  background-color: red;
+}
+.box16 {
+  grid-area: a6;
+  background-color: orangered;
+}
+.box17 {
+  grid-area: a7;
+  background-color: green;
+}
+.box18 {
+  grid-area: a8;
+  background-color: #20dbd8;
+}
+.box19 {
+  grid-area: a9;
+  background-color: greenyellow;
+}
+.container5 {
+  width: 598px;
+  height: 390px;
+  background-color: black;
+  padding: 16px;
+}
+.boxes5 {
+  width: 100%;
+  height: 311px;
+  display: grid;
+
+  grid-template-rows: 50px;
+  grid-template-areas:
+    "a10 a10 a11 a11"
+    "a9 a9 a12 a12"
+    "a9 a9 a12 a12";
+
+  gap: 10px;
+}
+.box20 {
+  grid-area: a9;
+  background-color: red;
+}
+.box21 {
+  grid-area: a10;
+  background-color: orangered;
+}
+.box22 {
+  grid-area: a11;
+  background-color: green;
+}
+.box23 {
+  grid-area: a12;
+  background-color: #20dbd8;
+  display: grid;
+  grid-template-areas:
+    "small1 small1"
+    "small2 small3";
+  /* gap: 10px; */
+}
+.childe-box1 {
+  grid-area: small1;
+  background-color: rgb(183, 233, 183);
+  margin: 5px;
+}
+.childe-box2 {
+  grid-area: small2;
+  background-color: #5aa68c;
+  margin: 5px;
+}
+.childe-box3 {
+  grid-area: small3;
+  background-color: orange;
+  margin: 5px;
+}
+.container6 {
+  width: 598px;
+  height: 390px;
+  background-color: black;
+  padding: 16px;
+}
+.boxes6 {
+  width: 100%;
+  height: 311px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr ;
+  grid-template-rows: 2fr 3fr 3fr;
+  grid-template-areas:
+   "c1 c1 c1"
+   "c2 c4 c4"
+   "c2 c3 c5";
+
+  gap: 10px;
+}
+.box24{
+    grid-area: c1;
+    background-color: orange;
+}
+.box25{
+    grid-area: c2;
+    background-color: green;
+}
+.box26{
+    grid-area: c3;
+    background-color: red;
+}
+.box27{
+    grid-area: c4;
+    background-color: #20dbd8;
+}
+.box28{
+   grid-area: c5;
+   background-color: #e69141;
+}
+
